@@ -12,6 +12,5 @@ github_username:  reyhoun/ui.toread
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 encoding: utf-8
 permalink: /:categories/:title
