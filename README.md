@@ -12,9 +12,9 @@ For information about contributing, see the [Contributing page](http://ui.toread
 
 You can preview your contributions before opening a pull request by running from within the directory:
 
-1. [Install Jekyll](http://ui.toread.ir/). 
-2. Run `jekyll s`.
-3. Enter `127.0.0.1:4000` on Your Browser.
+1. [Install Jekyll](http://jekyllrb.com/docs/installation/)
+2. Run `jekyll s`
+3. Enter `127.0.0.1:4000` on Your Browser
 
 ## License and copyright
 
