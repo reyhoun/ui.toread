@@ -1,0 +1,201 @@
+// Color Variables
+$primary-color: #2fbdc6;
+$secondary-color: #555;
+$light-color: #fff;
+
+
+
+// Main Style
+body {
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.header {
+  border-top: 5px solid $primary-color;
+}
+
+.header__top {
+  margin-bottom: 150px;
+}
+
+.header__social {
+  list-style-type: none;
+  margin: 10px 0 0;
+  text-align: left;
+
+  li {
+    display: inline-block;
+    padding-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.header__send-btn {
+  a {
+    float: right;
+    background: $primary-color;
+    padding: 10px 20px 15px;
+    color: $light-color;
+    font-size: 19px;
+    line-height: 1;
+  }
+}
+
+.header__titles {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.header__title,
+.header__subtitle {
+  font-family: 'WYekan';
+}
+
+.header__title {
+  font-size: 75.4px;
+
+  a {
+    color: $secondary-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.header__subtitle {
+  font-size: 35.4px;
+  color: lighten($secondary-color, 20%);
+}
+
+form {
+  position: relative;
+
+  input[type="email"] {
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: $primary-color;
+    color: lighten($secondary-color, 10%);
+
+    &:focus {
+      border-color: lighten($primary-color, 15%);
+      border-radius: 0;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: lighten($secondary-color, 40%);
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: lighten($secondary-color, 40%);  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: lighten($secondary-color, 40%);  
+  }
+
+  :-ms-input-placeholder {  
+    color: lighten($secondary-color, 40%);  
+  }
+}
+
+.subscribe {
+  margin-bottom: 100px;
+}
+
+.subscribe__btn {
+  position: absolute;
+  border: none;
+  font-size: 0;
+  float: left;
+  left: -10px;
+  top: 10px;
+  &:before {
+    content: url('../assets/img/mail-icon.png');
+    display: block;
+  }
+}
+
+.news-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.news-list__date {
+  color: lighten($secondary-color, 35%);
+  padding-left: 10px;
+  font-size: 18px;
+
+  .day {
+    padding-left: 5px;
+  }
+}
+
+.news-list__seprator {
+  color: lighten($secondary-color, 45%);
+  padding-left: 10px;
+}
+
+.news-list__title {
+  font-size: 22px;
+  a {
+    color: $primary-color;
+    &:hover {
+      color: darken($primary-color, 5%);
+    }
+  }
+}
+
+.footer {
+  background: $primary-color;
+  padding: 30px 0;
+  text-align: center;
+  color: $light-color;
+}
+
+.footer__menu {
+  list-style-type: none;
+  font-size: 23px;
+
+  li {
+    display: inline-block;
+    padding-right: 30px;
+
+    &:first-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: $light-color;
+    &:hover {
+      color: darken($primary-color, 20%);
+    }
+  }
+}
+
+.footer__poweredby {
+  font-size: 17px;
+
+  img {
+    padding: 0 5px;
+  }
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
