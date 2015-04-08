@@ -2,27 +2,29 @@
 layout: default
 ---
 <div class="post">
+  <div class="row">
+    <div class="ten columns offset-by-one">
+      <header class="post__header">
+        <span class="post__date">05,Feb, 2014</span>
+        <h1 class="post__title">{{ page.title }}</h1>
+      </header>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-  
-  <ul class="post-list">
-	{% for post in site.categories.issue %}
-	{% if post.categories contains page.issue %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h3>
-          <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
-        </h3>
-      </li>
-	{% endif %}
-    {% endfor %}
-  </ul>
-
+      <article class="post__content">
+        {{ content }}
+      </article>
+    
+      <ul class="post-list">
+      {% for post in site.categories.issue %}
+      {% if post.categories contains page.issue %}
+          <li>
+            <h3 class="post-list__title" >
+              <a href="{{ post.link }}">{{ post.title }}</a>
+            </h3>
+            <span class="author">فرستاده شده توسط <span class="name">نوید کاشانی</span></span>
+          </li>
+      {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
