@@ -43,10 +43,31 @@ $on-laptop:        800px;
 }
 
 
+// Load Fonts
+@font-face {
+	font-family: 'WMitra';
+	src: url('../assets/font/MitraWeb-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WMitra';
+	src: url('../assets/font/MitraWeb-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WYekan';
+	src:  url('../assets/font/YekanWeb-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+        "app",
+        "normalize",
+        "skeleton"
 ;
