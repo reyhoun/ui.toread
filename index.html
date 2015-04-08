@@ -4,15 +4,15 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Pages</h1>
+  <h1 class="page-heading">آخرین هفته نامه ها</h1>
 
   <ul class="post-list">
     {% assign issuepage = (site.pages | where: "layout" , "issue") %}
 	{% for page in issuepage reversed %}
       <li>
-        <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </h2>
+        <h3>
+          <a class="post-link" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
+        </h3>
       </li>
     {% endfor %}
   </ul>
