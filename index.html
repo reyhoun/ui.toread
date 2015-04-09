@@ -7,7 +7,7 @@ layout: default
     <div class="ten columns offset-by-one">
       <div class="subscribe">
         <form>
-          <input class="u-full-width" type="email" placeholder="برای عضویت در خبرنامه ایمیل خود را وارد نمایید..." id="exampleEmailInput">
+          <input class="u-full-width" type="email" placeholder="برای عضویت در خبرنامه ایمیل خود را وارد نمایید..." id="exampleEmailInput" disabled>
           <button class="subscribe__btn">Send</button>
         </form>
       </div>
@@ -24,8 +24,8 @@ layout: default
         </span>
 
         <span class="news-list__seprator">//</span>
-        <h3>
-          <a class="news-list__title" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
+        <h3 class="news-list__title">
+          <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
         </h3>
       </li>
     {% endfor %}
