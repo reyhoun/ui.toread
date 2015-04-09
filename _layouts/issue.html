@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="post">
   <div class="row">
-    <div class="ten columns offset-by-one">
+    <div class="twelve columns">
       <header class="post__header">
-        <span class="post__date">05,Feb, 2014</span>
+        <span class="post__date">{{ page.date | date_to_string }}</span>
         <h1 class="post__title">{{ page.title }}</h1>
       </header>
 
@@ -14,13 +14,13 @@ layout: default
       </article>
     
       <ul class="post-list">
-      {% for post in site.categories.issue %}
+      {% for post in site.categories.issue reversed %}
       {% if post.categories contains page.issue %}
           <li>
             <h3 class="post-list__title" >
               <a href="{{ post.link }}">{{ post.title }}</a>
             </h3>
-            <span class="author">فرستاده شده توسط <a href="http://navid.kashani.ir" class="name">نوید کاشانی</a></span>
+            <span class="author">ارسال شده توسط <a href="{{ post.user_link }}" class="name">{{ post.user }}</a></span>
           </li>
       {% endif %}
         {% endfor %}

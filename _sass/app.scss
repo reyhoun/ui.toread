@@ -231,10 +231,13 @@ form {
 
 .post__date {
   color: lighten($secondary-color, 35%);
+  direction: ltr;
+  display: block;
+  text-align: right;
 }
 
 .post__title {
-  font-size: 55px;
+  font-size: 38px;
 }
 
 .post-list__title {
