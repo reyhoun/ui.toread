@@ -3,17 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <div class="row">
-    <div class="ten columns offset-by-one">
-      <div class="subscribe">
-        <form>
-          <input class="u-full-width" type="email" placeholder="برای عضویت در خبرنامه ایمیل خود را وارد نمایید [این بخش در حال حاضر غیرفعال است]" id="exampleEmailInput" disabled>
-          <button class="subscribe__btn" disabled>ارسال</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
+	{% include newsletter.html %}
   <ul class="news-list">
     {% assign issuepage = (site.pages | where: "layout" , "issue") %}
 	{% for page in issuepage reversed %}
