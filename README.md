@@ -8,7 +8,9 @@ This directory contains the code for the UI to Read site.
 
 For information about contributing, see the [Contributing page](http://ui.toread.ir/contributing/).
 
-* Github Users [See This Video](http://toread.ir/add-link-github.mp4) (Persian Voice)
+* Github Users:
+  * [Open an Issue](https://github.com/reyhoun/ui.toread/issues) and Send a Link.
+  * Create a Link File and Pull Request, [See This Video](http://toread.ir/add-link-github.mp4) (Persian Voice).
 
 ## Running locally
 
