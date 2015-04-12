@@ -8,6 +8,8 @@ This directory contains the code for the UI to Read site.
 
 For information about contributing, see the [Contributing page](http://ui.toread.ir/contributing/).
 
+* Github Users [See This Video](http://toread.ir/add-link-github.mp4) (Persian Voice)
+
 ## Running locally
 
 You can preview your contributions before opening a pull request by running from within the directory:
