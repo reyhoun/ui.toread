@@ -5,7 +5,7 @@ description: "لینک های منتخب هفته برای طراحان و تو�
 rss_desc: "بهترین لینک های طراحی وب فارسی در هفته ای که گذشت"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ui.toread.ir" # the base hostname & protocol for your site
-twitter_username: ui.toread
+twitter_username: uitoread
 github_username:  reyhoun/ui.toread
 
 # Build settings
