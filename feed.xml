@@ -18,7 +18,7 @@ layout: null
         <description>{{ site.rss_desc | xml_escape }}</description>
         <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
         <link>{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ page.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <guid isPermaLink="true">{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
     {% endfor %}
   </channel>
