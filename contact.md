@@ -7,4 +7,4 @@ permalink: /contact/
 
 لطفا برای پیشنهاد لینک به صفحه [پیشنهاد لینک](/contributing/) مراجعه کنید.
 
-همچنین در صورت مشاهده اشکال در وب سایت و ارائه پیشنهاد می توانید آن را در بخش [Issues](https://github.com/reyhoun/ui.toread/issues) وارد نمائید.
+همچنین در صورت مشاهده اشکال در وب سایت و ارائه پیشنهاد می توانید آن را در بخش [Issues](https://github.com/reyhoun/ui.toread/issues) مطرح نمائید.
