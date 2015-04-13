@@ -36,6 +36,27 @@ a {
     padding-right: 15px;
     margin-bottom: 0;
   }
+
+  a {
+    .icon {
+      fill: $secondary-color;
+      -webkit-transition: fill 350ms ease;
+      -moz-transition: fill 350ms ease;
+      -o-transition: fill 350ms ease;
+      transition: fill 350ms ease;
+    }
+
+    &:hover {
+      .icon {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .header__send-btn {
