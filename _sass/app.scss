@@ -17,6 +17,20 @@ a {
   transition: all 350ms;
 }
 
+// Utility Classes
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Header Styles
 .header {
   border-top: 5px solid $primary-color;
 }
@@ -99,6 +113,8 @@ a {
   color: lighten($secondary-color, 20%);
 }
 
+
+// Form Main Style
 form {
   position: relative;
 
@@ -140,6 +156,7 @@ form {
   }
 }
 
+// Subscribe Section
 .subscribe {
   margin-bottom: 150px;
 }
@@ -189,6 +206,7 @@ form {
   }
 }
 
+// Footer Styles
 .footer {
   background: $primary-color;
   padding: 30px 0;
@@ -239,6 +257,7 @@ form {
   }
 }
 
+// Week Page Styles
 .post {
   margin-top: 50px;
 }
@@ -291,6 +310,7 @@ form {
   }
 }
 
+// Responsive Styles
 @media (min-width: 750px) {
   .header__title {
     font-size: 75.4px;
