@@ -130,6 +130,7 @@ form {
     border-color: $primary-color;
     color: lighten($secondary-color, 10%);
     margin-bottom: 0;
+    font-size: 18px;
 
     &:focus {
       border-color: lighten($primary-color, 15%);
@@ -164,6 +165,17 @@ form {
 // Subscribe Section
 .subscribe {
   margin-bottom: 150px;
+
+  input[type="submit"] {
+    border: none;
+    font-size: 0;
+  }
+
+  .mail-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
 }
 
 .subscribe__btn {
