@@ -240,6 +240,7 @@ form {
   list-style-type: none;
   font-size: 23px;
   padding-right: 0;
+  margin-bottom: 40px;
 
   li {
     display: inline-block;
@@ -260,10 +261,20 @@ form {
 
 .footer__poweredby {
   font-size: 17px;
+  margin-bottom: 10px;
 
   img {
     padding: 0 5px;
     vertical-align: middle;
+  }
+}
+
+.footer__page-source {
+  font-size: 13px;
+  color: darken($primary-color, 20%);
+
+  &:hover {
+    color: #fff;
   }
 }
 
