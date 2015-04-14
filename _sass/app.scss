@@ -166,6 +166,11 @@ form {
 .subscribe {
   margin-bottom: 150px;
 
+  form input[type="email"] {
+    font-size: 35px;
+    height: 100%;
+  }
+
   input[type="submit"] {
     border: none;
     font-size: 0;
@@ -175,6 +180,7 @@ form {
     position: absolute;
     left: 10px;
     top: 10px;
+    width: 35px;
   }
 }
 
