@@ -6,7 +6,7 @@ layout: default
 	{% include newsletter.html %}
   <ul class="news-list">
     {% assign issuepage = (site.pages | where: "layout" , "issue") %}
-	{% for page in issuepage reversed %}
+	{% for page in issuepage %}
       <li>
         <span class="news-list__date">
           <span class="month">{{ page.date | date: "%b" }}</span>
