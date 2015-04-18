@@ -6,5 +6,5 @@ section: article
 tags: design
 link: "http://parhum.net/blog/ui/learning-to-design/"
 user: "پرهام خوشبخت"
-user_link: "http://parhum.net/“
+user_link: "http://parhum.net/"
 ---
