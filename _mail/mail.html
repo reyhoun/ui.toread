@@ -23,6 +23,7 @@ body{
   padding:0;
 }
 
+
 .ExternalClass { 
   width:100%;
 } 
@@ -322,9 +323,11 @@ img.center {
 
 /* Typography */
 
+@font-face { font-family: 'WYekan'; src: url("http://ui.toread.ir/assets/font/YekanWeb-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  color: #777;
+  font-family: "WYekan", "Raleway", "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
   margin: 0;
@@ -358,20 +361,20 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
+  color: #2fbdc6; 
   text-decoration: none;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #1b6e74 !important;
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #1b6e74 !important;
 }
 
 a:visited { 
-  color: #2ba6cb !important;
+  color: #1b6e74 !important;
 }
 
 h1 a, 
@@ -380,7 +383,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #2ba6cb;
+  color: #2fbdc6;
 }
 
 h1 a:active, 
@@ -389,7 +392,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #2ba6cb !important; 
+  color: #2fbdc6 !important; 
 } 
 
 h1 a:visited, 
@@ -398,7 +401,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #2ba6cb !important; 
+  color: #2fbdc6 !important; 
 } 
 
 /* Panels */
@@ -463,7 +466,7 @@ table.tiny-button td a,
 table.small-button td a,
 table.medium-button td a,
 table.large-button td a {
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
@@ -701,41 +704,27 @@ body.outlook p {
       direction: rtl;
     }
 
-    table.facebook td {
-      background: #3b5998;
-      border-color: #2d4473;
-    }
-
-    table.facebook:hover td {
-      background: #2d4473 !important;
-    }
-
-    table.twitter td {
-      background: #00acee;
-      border-color: #0087bb;
-    }
-
-    table.twitter:hover td {
-      background: #0087bb !important;
-    }
-
-    table.google-plus td {
-      background-color: #DB4A39;
-      border-color: #CC0000;
-    }
-
-    table.google-plus:hover td {
-      background: #CC0000 !important;
+    body,
+    table.body,
+    p,
+    td {
+      font-size: 16px;
+      line-height: 1.5;
     }
 
     .template-label {
-      color: #555;
-      font-size: 18px;
+      color: #A6A6A6;
+      font-size: 15px;
       float: right;
     }
 
     .callout .wrapper {
       padding-bottom: 20px;
+    }
+
+    .panel {
+      background: #FCFCFC;
+      border: 1px solid #EFEFEF;
     }
 
     .callout .panel {
@@ -751,8 +740,9 @@ body.outlook p {
       padding: 50px 0;
     }
 
-    .header__bottom {
-      margin-bottom: 20px;
+    .header__top a,
+    .header__top a:visited {
+      color: #7E7E7E !important;
     }
 
     .header__titles {
@@ -763,43 +753,122 @@ body.outlook p {
       font-size: 51px;
     }
 
+    .header__title a {
+      color: #555 !important;
+      -webkit-transition: color 400ms;
+      -moz-transition: color 400ms;
+      -o-transition: color 400ms;
+      transition: color 400ms;
+    }
+
+    .header__title a:hover {
+      color: #2fbdc6 !important;
+    }
+
     .header__subtitle {
       font-size: 24px;
+      color: #888;
     }
 
     .header__seperator {
       display: block;
       width: 60px;
-      height: 8px;
-      background: #555;
+      height: 5px;
+      background: #EFEFEF;
+      margin: 30px 0 0;
     }
 
     .content__title {
       text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .news__sep {
+      padding: 0 5px;
+      color: #EFEFEF;
     }
 
     .news__items {
       list-style-type: none;
       padding: 0;
+      margin: 50px 0;
     }
 
     .news__items li {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+    }
+
+    .news__title {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .news__author {
+      font-size: 14px;
+      color: #a2a2a2;
+    }
+
+    .news__author a:visited {
+      color: #7E7E7E !important;
+    }
+
+    .author {
+      color: #7E7E7E;
     }
 
     .share {
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee;
-      padding: 30px 0;
+      padding: 45px 0;
+    }
+
+    .share__text {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    table .button td {
+      background: transparent;
+      border: 1px solid #C2C2C2;
+    }
+
+    table.button td a,
+    table.button td a:visited {
+      color: #777 !important;
+      font-family: inherit;
+    }
+
+
+
+    table .button td,
+    table .button td a {
+      -webkit-transition: all 350ms ease 0ms;
+      -moz-transition: all 350ms ease 0ms;
+      -o-transition: all 350ms ease 0ms;
+      transition: all 350ms ease 0ms;
+    }
+
+    table.button:hover td {
+      background: transparent !important;
+      border-color: #2fbdc6;
+    }
+
+    table.button:hover td a {
+      color: #2fbdc6 !important;
     }
 
     .footer {
       background: #2fbdc6;
+      padding: 20px 0;
     }
 
     .footer__social {
       list-style-type: none;
       padding: 0;
+      margin-bottom: 0;
     }
 
     .footer__social li {
@@ -814,6 +883,15 @@ body.outlook p {
     .footer__social .icon {
       width: 20px;
       height: 20px;
+      fill: #fff;
+      -webkit-transition: all 400ms;
+      -moz-transition: all 400ms;
+      -o-transition: all 400ms;
+      transition: all 400ms;
+    }
+
+    .footer__social a:hover .icon {
+      fill: #1b6e74;
     }
 
     .footer__text,
@@ -826,6 +904,7 @@ body.outlook p {
       list-style-type: none;
       padding: 0;
       text-align: center;
+      margin-bottom: 5px;
     }
 
     .footer__menu li {
@@ -834,11 +913,25 @@ body.outlook p {
     }
 
     .footer__menu li a {
+      color: #fff !important;
+      -webkit-transition: color 400ms;
+      -moz-transition: color 400ms;
+      -o-transition: color 400ms;
+      transition: color 400ms;
+    }
+
+    .footer__menu li a:hover {
+      color: #1b6e74 !important;
+    }
+
+    .footer__menu .seprator {
       color: #fff;
     }
 
     .footer__copyright {
       direction: ltr;
+      font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
     }
 
     .footer h5 {
@@ -890,7 +983,7 @@ body.outlook p {
                         <tr>
                           <td>
 
-                            <span class="header__top template-label">در خواندن این متن مشکلی دارید؟ در مرورگر ببینید.</span>
+                            <span class="header__top template-label">در خواندن این متن مشکلی دارید؟<a href="#">در مرورگر ببینید.</a></span>
 
                           </td>
                           <td class="expander"></td>
@@ -911,7 +1004,7 @@ body.outlook p {
                             <center>
 
                               <div class="header__bottom">
-                                <img class="center header__logo" src="../assets/img/ui-toread-logo.png" alt="" />
+                                <img class="center header__logo" src="http://ui.toread.ir/assets/img/ui-toread-logo-2.png" alt="" />
                                 <div class="header__titles">
                                   <div class="header__title"><a href="http://ui.toread.ir">هفته نامه طراحی وب فارسی</a></div>
                                   <div class="header__subtitle">لینک های منتخب طراحان و توسعه دهندگان در هر پنج شنبه</div>
@@ -957,7 +1050,7 @@ body.outlook p {
                         </tr>
 
                         <tr>
-                          <td class="panel Content__panel">
+                          <td class="panel">
                             <p>توضیحات خبرنامه در این باکس قرار میگیرد.</p>
                           </td>
                           <td class="expander"></td>
@@ -1007,7 +1100,7 @@ body.outlook p {
                           <tr>
                             <td class="center">
                               <center>
-                                <span class="share__text">مطالب خوب فارسی را با دیگران به اشتراک بگزارید</span>
+                                <span class="share__text">مطالب خوب فارسی را با دیگران به اشتراک بگذارید.</span>
                               </center>
                             </td>
                             <td class="expander"></td>
@@ -1073,24 +1166,22 @@ body.outlook p {
 
                               <ul class="footer__social">
                                 <li>
-                                  <a href="/feed.xml">
-                                    <svg enable-background="new 0 0 500 500" height="500px" id="Layer_1" version="1.1" viewBox="0 0 500 500" width="500px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon rss-icon"><path clip-rule="evenodd" d="M31.949,431.711c0,20.078,16.264,36.34,36.34,36.34h363.421  c20.078,0,36.34-16.262,36.34-36.34V68.29c0-20.077-16.262-36.34-36.34-36.34H68.29c-20.077,0-36.34,16.264-36.34,36.34V431.711z   M386.284,354.482c0,12.536-10.18,22.716-22.715,22.716c-12.537,0-22.717-10.18-22.717-22.716  c0-102.845-83.41-186.251-186.251-186.251c-12.536,0-22.713-10.177-22.713-22.713c0-12.538,10.177-22.715,22.713-22.715  c67.414,0,122.745,23.26,166.173,66.686C365.292,234.012,386.284,289.253,386.284,354.482z M304.513,354.482  c0,12.536-10.175,22.716-22.715,22.716c-12.536,0-22.712-10.18-22.712-22.716c0-57.688-46.795-104.482-104.484-104.482  c-12.536,0-22.713-10.177-22.713-22.713c0-12.539,10.177-22.713,22.713-22.713C237.366,204.574,304.513,271.723,304.513,354.482z   M131.889,336.314c0-22.628,18.26-40.888,40.885-40.888s40.884,18.26,40.884,40.888c0,22.623-18.258,40.884-40.884,40.884  S131.889,358.938,131.889,336.314z" fill-rule="evenodd"/>
-                                    </svg>
+                                  <a href="https://twitter.com/uitoread">
+                                    <img class="icon" src="http://ui.toread.ir/assets/img/twitter-icon.png" alt="" />
                                   </a>
                                 </li>
 
                                 <li>
-                                  <a href="https://github.com/{{ site.github_username }}">
-                                    <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon rss-icon"><path clip-rule="evenodd" d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill-rule="evenodd"/>
-                                    </svg>
+                                  <a href="https://github.com/reyhoun/ui.toread">
+                                    <img class="icon" src="http://ui.toread.ir/assets/img/github-icon.png" alt="" />
                                   </a>
                               </li>
 
                               <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}">
-                                  <svg height="512px" id="Слой_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon twitter-icon"><path d="M456,506H56c-27.617,0-50-22.392-50-50V56  C6,28.383,28.383,6,56,6h400c27.618,0,50,22.383,50,50v400C506,483.608,483.618,506,456,506z M438.09,106.283  c0,0-34.16,18.467-48.008,20.313c-31.396-48.018-148.671-27.705-128.349,65.557c-102.49,0.927-157.901-76.641-157.901-76.641  s-35.087,55.41,22.159,100.644c-11.084,0.928-32.315-6.455-32.315-6.455s-8.31,48.018,58.164,72.022  c-6.455,8.31-33.232,2.773-33.232,2.773s7.383,41.543,68.33,53.555C145.385,376.83,73.364,364.828,77.973,368.52  c60.02,55.4,328.73,67.402,331.504-189.287c13.848-4.619,38.769-42.481,38.769-42.481s-37.851,11.084-40.625,10.156  C437.172,129.36,438.09,106.283,438.09,106.283z" id="twitter_2_"/></svg>
-                                </a>
-                              </li>
+                                  <a href="/feed.xml">
+                                    <img class="icon" src="http://ui.toread.ir/assets/img/rss-icon.png" alt="" />
+                                  </a>
+                                </li>
 
                               </ul>
                               </center>
@@ -1101,7 +1192,7 @@ body.outlook p {
                           <tr>
                             <td>
 
-                              <p class="footer__text">ایمیلی که مشاهده می کنید به علت عضویت شما در هفته نامه طراحی وب فارسی است</p>
+                              <p class="footer__text">ایمیلی که مشاهده می کنید به علت عضویت شما در هفته نامه طراحی وب فارسی است.</p>
 
                             </td>
                             <td class="expander"></td>
@@ -1123,7 +1214,7 @@ body.outlook p {
                           <tr>
                             <td>
 
-                              <p class="footer__copyright">2015 Reyhoun.inc.</p>
+                              <p class="footer__copyright">© 2015 Reyhoun, Inc. Made with love at Tehran, Iran</p>
 
                             </td>
                             <td class="expander"></td>
