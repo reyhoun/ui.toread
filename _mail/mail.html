@@ -868,12 +868,12 @@ body.outlook p {
     .footer__social {
       list-style-type: none;
       padding: 0;
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     .footer__social li {
       display: inline-block;
-      padding-left: 15px;
+      padding-left: 20px;
     }
 
     .footer__social li:last-child {
@@ -953,6 +953,51 @@ body.outlook p {
 
     @media only screen and (max-width: 600px) {
 
+      .header__top {
+        padding: 30px 0;
+      }
+
+      .header__title {
+        font-size: 45px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+
+      .header__subtitle {
+        font-size: 21px;
+        line-height: 1.7;
+        display: none;
+      }
+
+      .content__title {
+        font-size: 24px;
+      }
+
+      .news__title {
+        font-size: 25px;
+      }
+
+      .news__author {
+        font-size: 13px;
+      }
+
+      table.button {
+        overflow: visible;
+      }
+
+      .share__text {
+        margin-bottom: 10px;
+      }
+
+      .footer__text,
+      .footer__copyright {
+        line-height: 1.9;
+      }
+
+      table[class="body"] .footer__social img {
+        width: 20px !important;
+      }
+
       table[class="body"] .right-text-pad {
         padding-left: 10px !important;
       }
@@ -1007,7 +1052,7 @@ body.outlook p {
                                 <img class="center header__logo" src="http://ui.toread.ir/assets/img/ui-toread-logo-2.png" alt="" />
                                 <div class="header__titles">
                                   <div class="header__title"><a href="http://ui.toread.ir">هفته نامه طراحی وب فارسی</a></div>
-                                  <div class="header__subtitle">لینک های منتخب طراحان و توسعه دهندگان در هر پنج شنبه</div>
+                                  <div class="header__subtitle hide-for-small">لینک های منتخب طراحان و توسعه دهندگان در هر پنج شنبه</div>
                                 </div>
                               </div>
 
@@ -1115,11 +1160,9 @@ body.outlook p {
                   <table class="row">
                     <tr>
                       <td class="wrapper">
-                        <table class="four columns">
+                        <table class="four columns hide-for-small">
                           <tr>
-                            <td>
-                            
-                            </td>
+                            <td></td>
                             <td class="expander"></td>
                           </tr>
                         </table>
