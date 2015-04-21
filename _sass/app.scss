@@ -130,7 +130,11 @@ form {
     border-color: $primary-color;
     color: lighten($secondary-color, 10%);
     margin-bottom: 0;
+    padding-left: 60px;
     font-size: 18px;
+
+    direction: ltr;
+    text-align: left;
 
     &:focus {
       border-color: lighten($primary-color, 15%);
@@ -147,18 +151,26 @@ form {
 
   ::-webkit-input-placeholder {
     color: lighten($secondary-color, 40%);
+    direction: rtl;
+    text-align: right;
   }
 
   :-moz-placeholder { /* Firefox 18- */
-    color: lighten($secondary-color, 40%);  
+    color: lighten($secondary-color, 40%);
+    direction: rtl;
+    text-align: right; 
   }
 
   ::-moz-placeholder {  /* Firefox 19+ */
-    color: lighten($secondary-color, 40%);  
+    color: lighten($secondary-color, 40%);
+    direction: rtl;
+    text-align: right; 
   }
 
   :-ms-input-placeholder {  
-    color: lighten($secondary-color, 40%);  
+    color: lighten($secondary-color, 40%);
+    direction: rtl;
+    text-align: right; 
   }
 }
 
@@ -393,6 +405,7 @@ form {
     form {
       input[type="email"] {
         font-size: 18px;
+        padding-left: 40px;
       }
     }
 
