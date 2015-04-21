@@ -10,9 +10,12 @@ layout: default
         <h1 class="post__title">{{ page.title }}</h1>
       </header>
 
+	{% assign content = page.content | strip_newlines %}
+	{% if content != ""  %}
       <article class="post__content">
         {{ content }}
       </article>
+	{% endif %}
     
       <ul class="post-list">
       {% for post in site.categories.issue reversed %}

@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1013,7 +1016,7 @@ body.outlook p {
                         <tr>
                           <td>
 
-                            <span class="header__top template-label">در خواندن این متن مشکلی دارید؟<a href="http://ui.toread.ir/">در مرورگر ببینید.</a></span>
+                            <span class="header__top template-label">در خواندن این متن مشکلی دارید؟<a href="http://ui.toread.ir/issue/{{ page.issue }}/">در مرورگر ببینید.</a></span>
 
                           </td>
                           <td class="expander"></td>
@@ -1070,39 +1073,40 @@ body.outlook p {
                         <tr>
                           <td>
                             <div class="content__title">
-                              <span class="news__number">شماره ی ۵</span>
+                              <span class="news__number">{{ page.title }}</span>
                               <span class="news__sep">//</span>
-                              <span class="news__date">۲۱ ادریبهشت ۹۴</span>
+                              <span class="news__date">{{ page.pdate }}</span>
                             </div>
                           </td>
 
                           <td class="expander"></td>
                         </tr>
-
-                        <tr>
-                          <td class="panel">
-                            <p>توضیحات خبرنامه در این باکس قرار میگیرد.</p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-
+						{% for issuepage in site.pages %}
+						{% if issuepage.layout == 'issue' %}
+							{% if issuepage.issue == page.issue %}
+								{% assign issue_content = issuepage.content | strip_newlines %}
+								{% if issue_content != ""  %}
+									<tr>
+									  <td class="panel">
+										{{ issue_content }}
+									  </td>
+									  <td class="expander"></td>
+									</tr>
+								{% endif %}
+							{% endif %}
+						{% endif %}
+						{% endfor %}
                         <tr>
                           <td>
                             <ul class="news__items">
+							  {% for post in site.categories.issue reversed %}
+							  {% if post.categories contains page.issue %}
                               <li>
-                                <h3 class="news__title"><a href="http://ui.toread.ir/">آشنایی با Gulp</a></h3>
-                                <span class="news__author">ارسال شده توسط<a href="http://navid.kashani.ir/" class="author">نوید کاشانی</a></span>
+                                <h3 class="news__title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
+                                <span class="news__author">ارسال شده توسط<a href="{{ post.user_link }}" class="author">{{ post.user }}</a></span>
                               </li>
-
-                              <li>
-                                <h3 class="news__title"><a href="http://ui.toread.ir/">دیدار با Yeoman</a></h3>
-                                <span class="news__author">ارسال شده توسط<a href="http://navid.kashani.ir/" class="author">نوید کاشانی</a></span>
-                              </li>
-
-                              <li>
-                                <h3 class="news__title"><a href="http://ui.toread.ir/">کار با Bootstrap</a></h3>
-                                <span class="news__author">ارسال شده توسط<a href="http://navid.kashani.ir/" class="author">نوید کاشانی</a></span>
-                              </li>
+						   	{% endif %}
+							{% endfor %}
                             </ul>
                           </td>
                           <td class="expander"></td>
@@ -1194,19 +1198,19 @@ body.outlook p {
 
                               <ul class="footer__social">
                                 <li>
-                                  <a href="https://twitter.com/uitoread">
+                                  <a href="https://twitter.com/{{ site.twitter_username }}">
                                     <img class="icon" src="http://ui.toread.ir/assets/img/twitter-icon.png" alt="" />
                                   </a>
                                 </li>
 
                                 <li>
-                                  <a href="https://github.com/reyhoun/ui.toread">
+                                  <a href="https://github.com/{{ site.github_username }}">
                                     <img class="icon" src="http://ui.toread.ir/assets/img/github-icon.png" alt="" />
                                   </a>
                               </li>
 
                               <li>
-                                  <a href="http://ui.toread.ir/feed.xml">
+                                  <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
                                     <img class="icon" src="http://ui.toread.ir/assets/img/rss-icon.png" alt="" />
                                   </a>
                                 </li>
