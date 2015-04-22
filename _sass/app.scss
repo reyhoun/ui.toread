@@ -7,6 +7,23 @@ $light-color: #fff;
 $body-font-size: 2.2rem;
 
 
+// a mixin for borwser support placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }   
+  &:-moz-placeholder {
+    @content;
+  }
+}
+
+
 
 // Main Style
 body {
@@ -147,6 +164,12 @@ form {
     &:disabled {
       cursor: not-allowed;
     }
+  }
+
+  @include placeholder {
+    color: lighten($secondary-color, 40%);
+    direction: rtl;
+    text-align: right;
   }
 
   ::-webkit-input-placeholder {
