@@ -804,12 +804,8 @@ body.outlook p {
       color: #a2a2a2;
     }
 
-    .news__author a:visited {
-      color: #676767 !important;
-    }
-
-    .author {
-      color: #676767;
+    .news__author:visited {
+      color: #a2a2a2 !important;
     }
 
     .share {
@@ -856,6 +852,10 @@ body.outlook p {
       padding: 20px 0;
     }
 
+    .footer a {
+      color: #fff !important;
+    }
+
     .footer__social {
       list-style-type: none;
       padding: 0;
@@ -887,6 +887,7 @@ body.outlook p {
       padding: 0;
       text-align: center;
       margin-bottom: 5px;
+      font-size: 20px;
     }
 
     .footer__menu li {
@@ -1097,7 +1098,7 @@ body.outlook p {
 							  {% if post.categories contains page.issue %}
                               <li>
                                 <h3 class="news__title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
-                                <span class="news__author">ارسال شده توسط<a href="{{ post.user_link }}" class="author"> {{ post.user }}</a></span>
+                                <a href="{{ post.user_link }}" class="news__author">ارسال شده توسط {{ post.user }}</a>
                               </li>
 						   	{% endif %}
 							{% endfor %}
