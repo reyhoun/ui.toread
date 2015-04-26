@@ -15,3 +15,12 @@ permalink: /about/
 
 ### چرا؟
 انتشار مطالب در وب فارسی بسیار ضعیف و کم است و ما وقتی بیشتر متوجه این موضوع شدیم که تصمیم گرفتیم برای شروع چند لینک مرتبط که در یک هفته منتشر شده بود را جمع کنیم. جهت مشاهده نیاز به وجود همچین وب سایتی می توانید به مطلب [لزوم وجود شبکه‌ی مطالب طراحی و برنامه‌نویسی](http://front-end.ir/general/why-we-need-a-network-for-ui-ux-and-programming-resources/) مراجعه کنید.
+
+### نمونه های مشابه
+در هفته نامه طراحی وب فارسی ما تنها لینک های مرتبط با طراحی وب با زبان فارسی را منتشر می کنیم. اگر به دنبال همچین نمونه ای به زبان انگلیسی هستید، سرویس های زیر را پیشنهاد می دهیم:
+
+* [Sidebar](http://sidebar.io/)
+* [JavaScript Weekly](http://javascriptweekly.com/)
+* [Mobile Web Weekly](http://mobilewebweekly.co/)
+* [HTML5 Weekly](http://html5weekly.com/)
+* [Web Operations Weekly](http://webopsweekly.com/)
