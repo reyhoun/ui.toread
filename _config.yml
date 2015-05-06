@@ -13,3 +13,5 @@ markdown: kramdown
 encoding: utf-8
 permalink: /:categories/:title
 exclude: ["README.md"]
+sass:
+    style: :compressed
