@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "wireframe  و prototype و  mockup چه فرقي با هم  دارند؟"
+title: "wireframe  و prototype و  mockup چه فرقی با هم  دارند؟"
 date: 2015-05-01 16:41:12
 section: article
 tags: design sketch
