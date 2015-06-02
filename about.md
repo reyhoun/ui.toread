@@ -24,3 +24,12 @@ permalink: /about/
 * [Mobile Web Weekly](http://mobilewebweekly.co/)
 * [HTML5 Weekly](http://html5weekly.com/)
 * [Web Operations Weekly](http://webopsweekly.com/)
+
+همچنین سهیل رشیدی هر دو هفته یک بار در [خبرنامه iDevCenter](http://idevcenter.com/newsletter/) بهترین اخبار و لینک‌های مرتبط با برنامه‌نویسی و توسعه نرم‌افزار را جمع‌آوری و برایتان ارسال می کند.
+
+### دیگران در مورد ما نوشته اند
+در لیست پایین، مطالبی که دیگران در مورد ما نوشته اند را مشاهده می کنید. اگر شما نیز مطلبی نوشته اید آن را برای ما [ارسال کنید](/contact/) تا به این لیست اضافه کنیم. پیشاپیش از اینکه مارا به دیگران معرفی می کنید، ممنونیم.
+
+* [ریحون: هفته نامه طراحی وب فارسی](http://reyhoun.com/fa/blog/ui-toread/)
+* [نوید کاشانی: هفته نامه طراحی وب فارسی](http://navid.kashani.ir/569/ui-toread/)
+* [ریحون: آماده سازی و ارسال ایمیل هفته نامه طراحی وب](http://reyhoun.com/fa/blog/email-template/)
