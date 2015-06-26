@@ -11,7 +11,7 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% assign issuepage = (site.pages | where: "layout" , "issue") %}
+    {% assign issuepage = (site.pages | where: "layout" , "issue" | sort: "date") %}
 	{% for page in issuepage reversed %}
       <item>
         <title>{{ page.title | xml_escape }}</title>
